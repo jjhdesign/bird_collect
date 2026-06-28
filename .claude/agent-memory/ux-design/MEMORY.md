@@ -1,0 +1,1 @@
+- [Bird Dex Design System](project-bird-dex-design-system.md) — Established tokens, icon conventions, locked-state treatment, podium colors, empty state pattern for 조류도감 app
