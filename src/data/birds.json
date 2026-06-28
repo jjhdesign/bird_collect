@@ -2033,7 +2033,7 @@
     "rarity": "common",
     "description": "도심 어디서나 볼 수 있는 가장 흔한 새. 회색 몸통에 목 부분의 무지개빛 광택이 특징이다.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Columba_livia_%28Rock_Dove%2C_wild%29%2C_Duncansby_Head%2C_Caithness%2C_Scotland_1.jpg/330px-Columba_livia_%28Rock_Dove%2C_wild%29%2C_Duncansby_Head%2C_Caithness%2C_Scotland_1.jpg",
-    "silhouette_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Columba_livia_%28Rock_Dove%2C_wild%29%2C_Duncansby_Head%2C_Caithness%2C_Scotland_1.jpg/330px-Columba_livia_%28Rock_Dove%2C_wild%29%2C_Duncansby_Head%2C_Caithness%2C_Scotland_1.jpg"
+    "silhouette_url": "https://hqilycrzmzefzozjuhrw.supabase.co/storage/v1/object/public/silhouettes/Columba_livia.png"
   },
   {
     "name_ko": "꿩",
@@ -2045,7 +2045,7 @@
     "rarity": "common",
     "description": "산과 들판에 서식하는 대형 텃새. 수컷은 붉은 얼굴과 화려한 깃털, 암컷은 갈색 보호색을 띤다.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Common_pheasant_%28Phasianus_colchicus%29_male_Heligan.jpg/330px-Common_pheasant_%28Phasianus_colchicus%29_male_Heligan.jpg",
-    "silhouette_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Common_pheasant_%28Phasianus_colchicus%29_male_Heligan.jpg/330px-Common_pheasant_%28Phasianus_colchicus%29_male_Heligan.jpg"
+    "silhouette_url": "https://hqilycrzmzefzozjuhrw.supabase.co/storage/v1/object/public/silhouettes/Phasianus_colchicus.png"
   },
   {
     "name_ko": "방울새",
@@ -2057,7 +2057,7 @@
     "rarity": "common",
     "description": "노란 날개띠가 특징인 텃새. 씨앗을 즐겨 먹으며 공원과 산림 가장자리에서 흔히 볼 수 있다.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_%2823026479292%29.jpg/330px-Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_%2823026479292%29.jpg",
-    "silhouette_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_%2823026479292%29.jpg/330px-Oriental_Greenfinch_-_Honshu_-_Japan_S4E2635_%2823026479292%29.jpg"
+    "silhouette_url": "https://hqilycrzmzefzozjuhrw.supabase.co/storage/v1/object/public/silhouettes/Chloris_sinica.png"
   },
   {
     "name_ko": "개똥지빠귀",
@@ -2069,7 +2069,7 @@
     "rarity": "common",
     "description": "가을과 겨울에 무리 지어 도래하는 흔한 겨울 철새. 가슴의 갈색 반점이 특징이다.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_%28cropped%29.jpeg/330px-Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_%28cropped%29.jpeg",
-    "silhouette_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_%28cropped%29.jpeg/330px-Turdus_eunomus_-_Forest_Botial-Jarvis_-_616099817_%28cropped%29.jpeg"
+    "silhouette_url": "https://hqilycrzmzefzozjuhrw.supabase.co/storage/v1/object/public/silhouettes/Turdus_eunomus.png"
   },
   {
     "name_ko": "멧새",
@@ -2081,7 +2081,7 @@
     "rarity": "common",
     "description": "산과 들판에 서식하는 텃새. 수컷은 밤색 머리와 흰 눈썹선이 특징이다.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Emberiza_cioides_male.JPG/330px-Emberiza_cioides_male.JPG",
-    "silhouette_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Emberiza_cioides_male.JPG/330px-Emberiza_cioides_male.JPG"
+    "silhouette_url": "https://hqilycrzmzefzozjuhrw.supabase.co/storage/v1/object/public/silhouettes/Emberiza_cioides.png"
   },
   {
     "name_ko": "흰배지빠귀",
@@ -2093,6 +2093,6 @@
     "rarity": "common",
     "description": "흰 배와 주황색 옆구리가 특징인 겨울 철새. 낙엽 쌓인 숲 바닥을 뒤지며 먹이를 찾는다.",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pale_Thrush_-_Taiwan_S4E8071_%2817027483687%29.jpg/330px-Pale_Thrush_-_Taiwan_S4E8071_%2817027483687%29.jpg",
-    "silhouette_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pale_Thrush_-_Taiwan_S4E8071_%2817027483687%29.jpg/330px-Pale_Thrush_-_Taiwan_S4E8071_%2817027483687%29.jpg"
+    "silhouette_url": "https://hqilycrzmzefzozjuhrw.supabase.co/storage/v1/object/public/silhouettes/Turdus_pallidus.png"
   }
 ]
