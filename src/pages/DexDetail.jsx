@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { supabase } from '../lib/supabase'
+import { supabase, cancelUnlock } from '../lib/supabase'
 import { useAuth } from '../hooks/useAuth'
 
 const RARITY_LABEL = {
@@ -31,6 +31,8 @@ export default function DexDetail() {
   const [birdNotFound, setBirdNotFound] = useState(false)
   const [unlocked, setUnlocked] = useState(false)
   const [unlockedAt, setUnlockedAt] = useState(null)
+  const [cancelling, setCancelling] = useState(false)
+  const [showCancelConfirm, setShowCancelConfirm] = useState(false)
 
   useEffect(() => {
     supabase.from('birds').select('*').eq('id', id).single()
@@ -75,6 +77,20 @@ export default function DexDetail() {
   }
 
   const inSeason = isInSeason(bird)
+
+  async function handleCancelUnlock() {
+    setCancelling(true)
+    try {
+      await cancelUnlock({ userId: user.id, birdId: id })
+      setUnlocked(false)
+      setUnlockedAt(null)
+      setShowCancelConfirm(false)
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setCancelling(false)
+    }
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -167,6 +183,37 @@ export default function DexDetail() {
                 />
               )}
             </div>
+
+            {user && (
+              showCancelConfirm ? (
+                <div className="bg-red-50 border border-red-100 rounded-xl p-4 space-y-3">
+                  <p className="text-sm font-medium text-red-700">정말 해금을 취소할까요?</p>
+                  <p className="text-xs text-red-500">취소하면 이 새를 다시 사진 찍어야 해금할 수 있어요.</p>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => setShowCancelConfirm(false)}
+                      className="flex-1 py-2 rounded-lg border border-gray-200 text-sm text-gray-600"
+                    >
+                      아니요
+                    </button>
+                    <button
+                      onClick={handleCancelUnlock}
+                      disabled={cancelling}
+                      className="flex-1 py-2 rounded-lg bg-red-500 text-white text-sm font-medium disabled:opacity-50"
+                    >
+                      {cancelling ? '취소 중...' : '해금 취소'}
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setShowCancelConfirm(true)}
+                  className="w-full py-2.5 rounded-xl border border-gray-200 text-sm text-gray-400 hover:text-red-500 hover:border-red-200 transition-colors"
+                >
+                  잘못 등록됐어요
+                </button>
+              )
+            )}
           </>
         ) : (
           <>

@@ -247,6 +247,17 @@ export default function Capture() {
                     <div className="text-3xl mb-2">🎉</div>
                     <h2 className="text-xl font-bold text-forest-700">{result?.name_ko} 해금!</h2>
                     <p className="text-sm text-gray-400 italic">{result?.name_sci}</p>
+                    {result?.confidence != null && (
+                      <div className="mt-2 flex items-center justify-center gap-2">
+                        <div className="flex-1 max-w-[120px] bg-gray-100 rounded-full h-1.5">
+                          <div
+                            className="bg-forest-500 h-1.5 rounded-full"
+                            style={{ width: `${Math.round(result.confidence * 100)}%` }}
+                          />
+                        </div>
+                        <span className="text-xs text-gray-500 font-medium">일치도 {Math.round(result.confidence * 100)}%</span>
+                      </div>
+                    )}
                   </div>
                   <p className="text-sm text-gray-600 text-center">{result?.reason}</p>
                   <div className="flex gap-2 mt-4">

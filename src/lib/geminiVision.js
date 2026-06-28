@@ -2,7 +2,7 @@ import SparkMD5 from 'spark-md5'
 import exifr from 'exifr'
 import { supabase } from './supabase'
 
-const CONFIDENCE_THRESHOLD = 0.7
+const CONFIDENCE_THRESHOLD = 0.8
 
 export async function fileToBase64(file) {
   return new Promise((resolve, reject) => {

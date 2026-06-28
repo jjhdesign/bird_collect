@@ -115,6 +115,16 @@ export async function getUnlockedBirdsWithData(userId) {
   return data || []
 }
 
+export async function cancelUnlock({ userId, birdId }) {
+  const { error } = await supabase
+    .from('user_birds')
+    .delete()
+    .eq('user_id', userId)
+    .eq('bird_id', birdId)
+
+  if (error) throw error
+}
+
 export async function findBirdByName(nameKo) {
   if (!nameKo) return null
   const normalized = nameKo.trim()
